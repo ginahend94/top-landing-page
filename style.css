@@ -2,15 +2,24 @@
     box-sizing: border-box;
 }
 
-.wrapper > * {
-    border: solid 1px;
-} /*TEST*/
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --dark-bg: #1f2937;
+    --secondary: #e5e7eb;
+    --main-txt: #f9faf8;
+    --button: #3882f6;
+}
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 960px;
     margin: auto;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -19,8 +28,16 @@ header {
     padding: 16px;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap:20px
+}
+
 .body {
-    flex:1;
+    flex: 1;
+    padding: 16px;
 }
 
 /*TEST*/
@@ -30,3 +47,10 @@ header {
 header > * {
     border: solid 1px;
 }
+.wrapper > * {
+    border: solid 1px;
+} 
+.wrapper {
+    border: solid 1px orange;
+}
+/*TEST*/
