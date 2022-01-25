@@ -1,0 +1,32 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+.wrapper > * {
+    border: solid 1px;
+} /*TEST*/
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.body {
+    flex:1;
+}
+
+/*TEST*/
+.body > * {
+    border: solid 1px red;
+}
+header > * {
+    border: solid 1px;
+}
