@@ -158,14 +158,58 @@ blockquote {
     align-self: flex-end;
 }
 
+
 .hero, main, .quote, .cta {
     /* padding: 16px; */
     max-width: 1000px;
     margin: auto;
 }
+.cta {
+    border-radius: 10px;
+    margin: 100px auto;
+    padding: 50px 150px;
+    background-color: var(--button);
+    color: var(--main-txt);
+    display: flex;
+    justify-content: space-between;
+}
+.cta h3, .cta p {
+    margin: 0;
+}
+.cta p {
+    color: var(--secondary);
+    font-weight: 300;
+}
+.cta h3 {
+    font-weight: 400;
+}
+.cta button {
+    border:solid 2px var(--main-txt);
+    color: var(--main-txt);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 8px 30px;
+    transition: .2s;
+    cursor: pointer;
+}
+.cta button:hover {
+    background-color: rgba(249, 250, 248,.1);
+}
+.cta button:active {
+    background-color: rgba(249, 250, 248,.3);
+}
+
+footer {
+    display: flex;
+    color: var(--main-txt);
+    background-color: var(--dark-bg);
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
 
 /*TEST*/
-.body > * {
+/* .body > * {
     border: solid 1px red;
-}
+} */
 /*TEST*/
